@@ -1,1 +1,31 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Search</title>
+</head>
+<body>
+    <main>
+        <h1>Weather Search</h1>
+
+        <form id="weather-form">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="e.g. Kelowna" required>
+            <button type="submit">Search</button>
+        </form>
+
+        <p id="statusMessage" role="status" aria-live="polite">Enter a city to see its temperature.</p>
+
+        <section id="result" aria-labelledby="result-heading" hidden>
+            <h2 id="result-heading">Weather Result</h2>
+            <p>Location: <span id="location"></span></p>
+            <p>Celsius: <span id="celsius"></span></p>
+            <p>Fahrenheit: <span id="fahrenheit"></span></p>
+        </section>
+    </main>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
