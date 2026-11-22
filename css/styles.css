@@ -1,5 +1,5 @@
 
-/* Basic M2 layout ¡ª mobile first */
+/* Basic M2 layout ï¿½ï¿½ mobile first */
 * {
     box-sizing: border-box;
 }
@@ -83,6 +83,22 @@ button:focus-visible {
 #result h2 {
     margin-top: 0;
 }
+
+#chartContainer {
+    margin-top: 1.25rem;
+    padding: 1rem;
+    background-color: #eef4fa;
+    border: 1px solid #d6dfe8;
+    border-radius: 6px;
+}
+
+.radio {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+}
+
 
 @media (min-width: 38rem) {
     form {
